@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "tema": "cambios y devoluciones",
+    "contenido": "Los cambios pueden solicitarse dentro de 30 días corridos desde la recepción del producto. El producto debe estar sin uso, con etiquetas, empaque original y boleta o comprobante de compra. La devolución de dinero aplica cuando el producto presenta falla, no corresponde a lo comprado o cumple las condiciones comerciales vigentes."
+  },
+  {
+    "id": 2,
+    "tema": "métodos de pago",
+    "contenido": "La tienda acepta tarjetas de crédito, tarjetas de débito, transferencia bancaria y pagos digitales habilitados en la plataforma. No se deben solicitar datos bancarios sensibles por chat. El agente solo debe informar medios disponibles y orientar al cliente hacia el canal oficial de pago."
+  },
+  {
+    "id": 3,
+    "tema": "despacho y tiempos de entrega",
+    "contenido": "Los despachos a domicilio demoran entre 2 y 5 días hábiles en zonas urbanas principales. En zonas extremas o rurales el plazo puede extenderse entre 5 y 10 días hábiles. El tiempo exacto dependerá de la dirección, disponibilidad del producto y operador logístico."
+  },
+  {
+    "id": 4,
+    "tema": "seguimiento de pedido",
+    "contenido": "Una vez confirmada la compra, el cliente recibe un código o enlace de seguimiento por correo electrónico o mensaje. El agente no debe inventar códigos de seguimiento. Si el cliente no cuenta con código, debe sugerir revisar el correo de confirmación o contactar soporte."
+  },
+  {
+    "id": 5,
+    "tema": "garantía",
+    "contenido": "Todos los productos cuentan con garantía legal según la normativa vigente. Si el producto presenta falla de fabricación, el cliente puede solicitar revisión, cambio, reparación o devolución según corresponda. La garantía no cubre daños por mal uso, desgaste normal o intervención no autorizada."
+  },
+  {
+    "id": 6,
+    "tema": "retiro en tienda",
+    "contenido": "El retiro en tienda está disponible para productos seleccionados y sucursales habilitadas. El cliente debe esperar la confirmación de disponibilidad antes de acudir. Para retirar, debe presentar identificación y comprobante de compra."
+  },
+  {
+    "id": 7,
+    "tema": "stock y disponibilidad",
+    "contenido": "El stock informado puede variar según tienda, bodega o canal de venta. El agente debe responder únicamente con el stock disponible en la base entregada. Si no existe información suficiente, debe indicarlo claramente y no inventar disponibilidad."
+  },
+  {
+    "id": 8,
+    "tema": "promociones y descuentos",
+    "contenido": "Las promociones están sujetas a vigencia, stock disponible y condiciones comerciales. El agente puede informar promociones solo si están presentes en la información entregada. No debe crear descuentos personalizados ni prometer precios distintos a los registrados."
+  },
+  {
+    "id": 9,
+    "tema": "contacto con soporte",
+    "contenido": "Si el cliente requiere ayuda adicional, reclamos, cambios complejos o información no disponible, debe ser derivado a soporte de la tienda. El agente debe entregar una respuesta clara y sugerir continuar por los canales oficiales de atención."
+  },
+  {
+    "id": 10,
+    "tema": "seguridad y privacidad",
+    "contenido": "El agente no debe solicitar contraseñas, claves bancarias, códigos de seguridad, datos completos de tarjetas ni documentos sensibles por chat. Solo puede orientar al cliente y recomendar realizar pagos o gestiones sensibles en canales oficiales."
+  }
+]

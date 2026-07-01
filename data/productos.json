@@ -1,0 +1,2964 @@
+[
+  {
+    "id": 1,
+    "nombre": "Nike Pegasus 41",
+    "categoria": "zapatillas running",
+    "precio": 129990,
+    "marca": "Nike",
+    "descripcion": "Zapatilla cómoda para correr en ciudad y entrenamiento diario.",
+    "colores": [
+      "negro",
+      "azul"
+    ],
+    "tallas": [
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "stock": 18,
+    "tags": [
+      "running",
+      "ciudad",
+      "deporte",
+      "comodidad",
+      "calzado",
+      "entrenamiento"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Adidas Runfalcon",
+    "categoria": "zapatillas running",
+    "precio": 69990,
+    "marca": "Adidas",
+    "descripcion": "Zapatilla económica para caminata, trote suave y uso diario.",
+    "colores": [
+      "negro",
+      "blanco"
+    ],
+    "tallas": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 25,
+    "tags": [
+      "running",
+      "barato",
+      "ciudad",
+      "casual",
+      "caminar",
+      "calzado"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Asics Gel Pulse 15",
+    "categoria": "zapatillas running",
+    "precio": 99990,
+    "marca": "Asics",
+    "descripcion": "Zapatilla con buena amortiguación para corredores principiantes e intermedios.",
+    "colores": [
+      "azul",
+      "negro"
+    ],
+    "tallas": [
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "stock": 11,
+    "tags": [
+      "running",
+      "amortiguacion",
+      "deporte",
+      "calzado"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "Skechers Go Walk Flex",
+    "categoria": "zapatillas urbanas",
+    "precio": 74990,
+    "marca": "Skechers",
+    "descripcion": "Zapatilla liviana y cómoda para caminatas largas y uso diario.",
+    "colores": [
+      "negro",
+      "gris",
+      "azul"
+    ],
+    "tallas": [
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 22,
+    "tags": [
+      "caminar",
+      "comodidad",
+      "uso diario",
+      "urbano",
+      "calzado"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "New Balance 520",
+    "categoria": "zapatillas urbanas",
+    "precio": 84990,
+    "marca": "New Balance",
+    "descripcion": "Zapatilla urbana de estilo casual con buena comodidad para el día a día.",
+    "colores": [
+      "gris",
+      "azul"
+    ],
+    "tallas": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 16,
+    "tags": [
+      "casual",
+      "urbano",
+      "comodidad",
+      "calzado"
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "Puma Flyer Runner",
+    "categoria": "zapatillas running",
+    "precio": 64990,
+    "marca": "Puma",
+    "descripcion": "Zapatilla deportiva económica para entrenamiento ligero y caminatas.",
+    "colores": [
+      "negro",
+      "rojo"
+    ],
+    "tallas": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 14,
+    "tags": [
+      "running",
+      "barato",
+      "deporte",
+      "caminar",
+      "calzado"
+    ]
+  },
+  {
+    "id": 7,
+    "nombre": "Reebok Lite Plus",
+    "categoria": "zapatillas training",
+    "precio": 59990,
+    "marca": "Reebok",
+    "descripcion": "Zapatilla flexible para gimnasio, entrenamiento funcional y uso casual.",
+    "colores": [
+      "negro",
+      "blanco"
+    ],
+    "tallas": [
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "stock": 19,
+    "tags": [
+      "training",
+      "gimnasio",
+      "barato",
+      "calzado"
+    ]
+  },
+  {
+    "id": 8,
+    "nombre": "Nike Court Vision",
+    "categoria": "zapatillas urbanas",
+    "precio": 89990,
+    "marca": "Nike",
+    "descripcion": "Zapatilla casual de inspiración deportiva para uso urbano.",
+    "colores": [
+      "blanco",
+      "negro"
+    ],
+    "tallas": [
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "stock": 12,
+    "tags": [
+      "casual",
+      "urbano",
+      "moda",
+      "calzado"
+    ]
+  },
+  {
+    "id": 9,
+    "nombre": "Adidas Advantage Base",
+    "categoria": "zapatillas urbanas",
+    "precio": 79990,
+    "marca": "Adidas",
+    "descripcion": "Zapatilla blanca de estilo clásico para uso diario y combinaciones casuales.",
+    "colores": [
+      "blanco",
+      "negro"
+    ],
+    "tallas": [
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "stock": 20,
+    "tags": [
+      "casual",
+      "urbano",
+      "blanco",
+      "calzado"
+    ]
+  },
+  {
+    "id": 10,
+    "nombre": "Converse Chuck Taylor",
+    "categoria": "zapatillas urbanas",
+    "precio": 69990,
+    "marca": "Converse",
+    "descripcion": "Zapatilla de lona clásica para estilo casual y urbano.",
+    "colores": [
+      "negro",
+      "blanco",
+      "rojo"
+    ],
+    "tallas": [
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 17,
+    "tags": [
+      "casual",
+      "urbano",
+      "lona",
+      "calzado"
+    ]
+  },
+  {
+    "id": 11,
+    "nombre": "Vans Old Skool",
+    "categoria": "zapatillas urbanas",
+    "precio": 74990,
+    "marca": "Vans",
+    "descripcion": "Zapatilla urbana resistente para uso diario y estilo skater.",
+    "colores": [
+      "negro",
+      "blanco"
+    ],
+    "tallas": [
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 13,
+    "tags": [
+      "casual",
+      "skater",
+      "urbano",
+      "calzado"
+    ]
+  },
+  {
+    "id": 12,
+    "nombre": "Merrell Moab 3",
+    "categoria": "zapatillas trekking",
+    "precio": 119990,
+    "marca": "Merrell",
+    "descripcion": "Zapatilla de trekking con agarre y soporte para caminatas en cerro.",
+    "colores": [
+      "verde",
+      "café",
+      "negro"
+    ],
+    "tallas": [
+      39,
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "stock": 9,
+    "tags": [
+      "trekking",
+      "outdoor",
+      "cerro",
+      "agarre",
+      "calzado"
+    ]
+  },
+  {
+    "id": 13,
+    "nombre": "Columbia Trailstorm",
+    "categoria": "zapatillas trekking",
+    "precio": 109990,
+    "marca": "Columbia",
+    "descripcion": "Zapatilla outdoor para senderismo, lluvia ligera y terrenos irregulares.",
+    "colores": [
+      "gris",
+      "negro"
+    ],
+    "tallas": [
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "stock": 8,
+    "tags": [
+      "trekking",
+      "outdoor",
+      "lluvia",
+      "senderismo",
+      "calzado"
+    ]
+  },
+  {
+    "id": 14,
+    "nombre": "Skechers Arch Fit",
+    "categoria": "zapatillas urbanas",
+    "precio": 89990,
+    "marca": "Skechers",
+    "descripcion": "Zapatilla con soporte de arco para caminar largas distancias.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 15,
+    "tags": [
+      "caminar",
+      "comodidad",
+      "soporte",
+      "calzado"
+    ]
+  },
+  {
+    "id": 15,
+    "nombre": "Under Armour Charged",
+    "categoria": "zapatillas running",
+    "precio": 89990,
+    "marca": "Under Armour",
+    "descripcion": "Zapatilla deportiva con amortiguación para running y entrenamiento diario.",
+    "colores": [
+      "negro",
+      "azul"
+    ],
+    "tallas": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 10,
+    "tags": [
+      "running",
+      "deporte",
+      "amortiguacion",
+      "calzado"
+    ]
+  },
+  {
+    "id": 16,
+    "nombre": "Fila Racer Move",
+    "categoria": "zapatillas running",
+    "precio": 49990,
+    "marca": "Fila",
+    "descripcion": "Zapatilla económica para uso deportivo ligero y caminata casual.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "stock": 21,
+    "tags": [
+      "barato",
+      "running",
+      "caminar",
+      "calzado"
+    ]
+  },
+  {
+    "id": 17,
+    "nombre": "Hush Puppies Casual Walk",
+    "categoria": "zapatos casuales",
+    "precio": 69990,
+    "marca": "Hush Puppies",
+    "descripcion": "Zapato cómodo para oficina informal y uso diario.",
+    "colores": [
+      "café",
+      "negro"
+    ],
+    "tallas": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 10,
+    "tags": [
+      "casual",
+      "oficina",
+      "comodidad",
+      "calzado"
+    ]
+  },
+  {
+    "id": 18,
+    "nombre": "Guante Formal Oxford",
+    "categoria": "zapatos formales",
+    "precio": 89990,
+    "marca": "Guante",
+    "descripcion": "Zapato formal de cuero sintético para trabajo, reuniones y eventos.",
+    "colores": [
+      "negro",
+      "café"
+    ],
+    "tallas": [
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "stock": 7,
+    "tags": [
+      "formal",
+      "oficina",
+      "evento",
+      "calzado"
+    ]
+  },
+  {
+    "id": 19,
+    "nombre": "Bata Comfort Office",
+    "categoria": "zapatos formales",
+    "precio": 59990,
+    "marca": "Bata",
+    "descripcion": "Zapato formal económico para uso laboral diario.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 13,
+    "tags": [
+      "formal",
+      "barato",
+      "oficina",
+      "calzado"
+    ]
+  },
+  {
+    "id": 20,
+    "nombre": "Nike Revolution 7",
+    "categoria": "zapatillas running",
+    "precio": 74990,
+    "marca": "Nike",
+    "descripcion": "Zapatilla versátil para trote suave, caminata y entrenamiento diario.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 24,
+    "tags": [
+      "running",
+      "caminar",
+      "deporte",
+      "calzado"
+    ]
+  },
+  {
+    "id": 21,
+    "nombre": "Adidas Duramo SL",
+    "categoria": "zapatillas running",
+    "precio": 79990,
+    "marca": "Adidas",
+    "descripcion": "Zapatilla liviana para correr en ciudad y actividades deportivas.",
+    "colores": [
+      "azul",
+      "negro"
+    ],
+    "tallas": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 16,
+    "tags": [
+      "running",
+      "liviano",
+      "ciudad",
+      "calzado"
+    ]
+  },
+  {
+    "id": 22,
+    "nombre": "Crocs Classic Clog",
+    "categoria": "sandalias",
+    "precio": 44990,
+    "marca": "Crocs",
+    "descripcion": "Sandalia cómoda y liviana para casa, playa o uso relajado.",
+    "colores": [
+      "negro",
+      "blanco",
+      "azul"
+    ],
+    "tallas": [
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 30,
+    "tags": [
+      "comodidad",
+      "playa",
+      "casa",
+      "relajado",
+      "calzado"
+    ]
+  },
+  {
+    "id": 23,
+    "nombre": "Havaianas Top",
+    "categoria": "sandalias",
+    "precio": 19990,
+    "marca": "Havaianas",
+    "descripcion": "Sandalia simple y económica para verano, playa y piscina.",
+    "colores": [
+      "negro",
+      "azul",
+      "verde"
+    ],
+    "tallas": [
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "stock": 35,
+    "tags": [
+      "verano",
+      "playa",
+      "barato",
+      "calzado"
+    ]
+  },
+  {
+    "id": 24,
+    "nombre": "Timberland Euro Sprint",
+    "categoria": "botines outdoor",
+    "precio": 129990,
+    "marca": "Timberland",
+    "descripcion": "Botín resistente para uso outdoor, lluvia y terrenos urbanos exigentes.",
+    "colores": [
+      "café",
+      "negro"
+    ],
+    "tallas": [
+      40,
+      41,
+      42,
+      43,
+      44
+    ],
+    "stock": 6,
+    "tags": [
+      "outdoor",
+      "invierno",
+      "lluvia",
+      "botin",
+      "calzado"
+    ]
+  },
+  {
+    "id": 25,
+    "nombre": "Lippi Terray Mid",
+    "categoria": "botines trekking",
+    "precio": 99990,
+    "marca": "Lippi",
+    "descripcion": "Botín de trekking para caminatas, cerro y clima frío.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      39,
+      40,
+      41,
+      42,
+      43
+    ],
+    "stock": 10,
+    "tags": [
+      "trekking",
+      "outdoor",
+      "invierno",
+      "cerro",
+      "calzado"
+    ]
+  },
+  {
+    "id": 26,
+    "nombre": "Polera Nike Dri-FIT",
+    "categoria": "ropa deportiva",
+    "precio": 29990,
+    "marca": "Nike",
+    "descripcion": "Polera respirable para entrenamiento, running y gimnasio.",
+    "colores": [
+      "negro",
+      "azul",
+      "blanco"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 28,
+    "tags": [
+      "deporte",
+      "running",
+      "gimnasio",
+      "respirable"
+    ]
+  },
+  {
+    "id": 27,
+    "nombre": "Polera Adidas Own The Run",
+    "categoria": "ropa deportiva",
+    "precio": 32990,
+    "marca": "Adidas",
+    "descripcion": "Polera liviana para correr y entrenar con comodidad.",
+    "colores": [
+      "negro",
+      "verde",
+      "gris"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 20,
+    "tags": [
+      "running",
+      "deporte",
+      "liviano",
+      "entrenamiento"
+    ]
+  },
+  {
+    "id": 28,
+    "nombre": "Short Puma Active",
+    "categoria": "ropa deportiva",
+    "precio": 24990,
+    "marca": "Puma",
+    "descripcion": "Short deportivo cómodo para gimnasio, trote y uso activo.",
+    "colores": [
+      "negro",
+      "azul"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 22,
+    "tags": [
+      "deporte",
+      "gimnasio",
+      "barato",
+      "verano"
+    ]
+  },
+  {
+    "id": 29,
+    "nombre": "Calza Reebok Training",
+    "categoria": "ropa deportiva",
+    "precio": 34990,
+    "marca": "Reebok",
+    "descripcion": "Calza elástica para entrenamiento funcional, yoga y gimnasio.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 15,
+    "tags": [
+      "training",
+      "gimnasio",
+      "yoga",
+      "elasticidad"
+    ]
+  },
+  {
+    "id": 30,
+    "nombre": "Pantalón Under Armour Tech",
+    "categoria": "ropa deportiva",
+    "precio": 44990,
+    "marca": "Under Armour",
+    "descripcion": "Pantalón deportivo para entrenamiento y uso casual activo.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 13,
+    "tags": [
+      "deporte",
+      "training",
+      "comodidad"
+    ]
+  },
+  {
+    "id": 31,
+    "nombre": "Polerón Adidas Essentials",
+    "categoria": "ropa deportiva",
+    "precio": 54990,
+    "marca": "Adidas",
+    "descripcion": "Polerón deportivo de algodón para entrenamiento suave o uso diario.",
+    "colores": [
+      "negro",
+      "gris",
+      "azul"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 18,
+    "tags": [
+      "deporte",
+      "casual",
+      "comodidad",
+      "abrigo"
+    ]
+  },
+  {
+    "id": 32,
+    "nombre": "Chaqueta Cortaviento Nike Windrunner",
+    "categoria": "ropa deportiva",
+    "precio": 89990,
+    "marca": "Nike",
+    "descripcion": "Chaqueta liviana cortaviento para running y actividades al aire libre.",
+    "colores": [
+      "negro",
+      "azul"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 9,
+    "tags": [
+      "running",
+      "viento",
+      "outdoor",
+      "chaqueta"
+    ]
+  },
+  {
+    "id": 33,
+    "nombre": "Top Deportivo Puma Fit",
+    "categoria": "ropa deportiva",
+    "precio": 27990,
+    "marca": "Puma",
+    "descripcion": "Top de soporte medio para gimnasio, yoga y entrenamiento.",
+    "colores": [
+      "negro",
+      "rosado"
+    ],
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 17,
+    "tags": [
+      "gimnasio",
+      "training",
+      "yoga"
+    ]
+  },
+  {
+    "id": 34,
+    "nombre": "Calcetines Deportivos Adidas Pack 3",
+    "categoria": "accesorios deportivos",
+    "precio": 12990,
+    "marca": "Adidas",
+    "descripcion": "Pack de calcetines deportivos para entrenamiento y uso diario.",
+    "colores": [
+      "negro",
+      "blanco",
+      "gris"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 45,
+    "tags": [
+      "calcetines",
+      "deporte",
+      "barato"
+    ]
+  },
+  {
+    "id": 35,
+    "nombre": "Guantes Training Everlast",
+    "categoria": "accesorios deportivos",
+    "precio": 19990,
+    "marca": "Everlast",
+    "descripcion": "Guantes para entrenamiento de fuerza, gimnasio y protección de manos.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 19,
+    "tags": [
+      "gimnasio",
+      "training",
+      "fuerza"
+    ]
+  },
+  {
+    "id": 36,
+    "nombre": "Mat Yoga ProFit",
+    "categoria": "accesorios deportivos",
+    "precio": 24990,
+    "marca": "ProFit",
+    "descripcion": "Mat antideslizante para yoga, pilates y ejercicios en casa.",
+    "colores": [
+      "negro",
+      "verde",
+      "rosado"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 26,
+    "tags": [
+      "yoga",
+      "pilates",
+      "casa",
+      "ejercicio"
+    ]
+  },
+  {
+    "id": 37,
+    "nombre": "Botella Deportiva Camelbak 750ml",
+    "categoria": "accesorios deportivos",
+    "precio": 17990,
+    "marca": "Camelbak",
+    "descripcion": "Botella reutilizable para hidratación durante deporte o uso diario.",
+    "colores": [
+      "azul",
+      "negro",
+      "transparente"
+    ],
+    "tallas": [
+      "750ml"
+    ],
+    "stock": 32,
+    "tags": [
+      "hidratacion",
+      "deporte",
+      "botella"
+    ]
+  },
+  {
+    "id": 38,
+    "nombre": "Bolso Deportivo Nike Brasilia",
+    "categoria": "bolsos deportivos",
+    "precio": 39990,
+    "marca": "Nike",
+    "descripcion": "Bolso amplio para gimnasio, entrenamiento y viajes cortos.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 14,
+    "tags": [
+      "gimnasio",
+      "bolso",
+      "deporte"
+    ]
+  },
+  {
+    "id": 39,
+    "nombre": "Banda Elástica ProFit Set",
+    "categoria": "accesorios deportivos",
+    "precio": 15990,
+    "marca": "ProFit",
+    "descripcion": "Set de bandas elásticas para fuerza, movilidad y entrenamiento en casa.",
+    "colores": [
+      "verde",
+      "azul",
+      "negro"
+    ],
+    "tallas": [
+      "set"
+    ],
+    "stock": 40,
+    "tags": [
+      "casa",
+      "fuerza",
+      "movilidad",
+      "barato"
+    ]
+  },
+  {
+    "id": 40,
+    "nombre": "Pesas Mancuernas 3kg",
+    "categoria": "accesorios deportivos",
+    "precio": 22990,
+    "marca": "BodyTech",
+    "descripcion": "Par de mancuernas de 3 kg para entrenamiento en casa.",
+    "colores": [
+      "gris",
+      "negro"
+    ],
+    "tallas": [
+      "3kg"
+    ],
+    "stock": 18,
+    "tags": [
+      "fuerza",
+      "casa",
+      "pesas",
+      "gimnasio"
+    ]
+  },
+  {
+    "id": 41,
+    "nombre": "Polerón Urban Classic",
+    "categoria": "ropa casual",
+    "precio": 39990,
+    "marca": "Urban",
+    "descripcion": "Polerón cómodo para uso diario, estilo casual y urbano.",
+    "colores": [
+      "gris",
+      "negro",
+      "azul"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 20,
+    "tags": [
+      "casual",
+      "comodidad",
+      "urbano",
+      "barato"
+    ]
+  },
+  {
+    "id": 42,
+    "nombre": "Jeans Levi's 511",
+    "categoria": "ropa casual",
+    "precio": 69990,
+    "marca": "Levi's",
+    "descripcion": "Jeans de corte slim para uso casual y diario.",
+    "colores": [
+      "azul",
+      "negro"
+    ],
+    "tallas": [
+      38,
+      40,
+      42,
+      44,
+      46
+    ],
+    "stock": 12,
+    "tags": [
+      "jeans",
+      "casual",
+      "urbano"
+    ]
+  },
+  {
+    "id": 43,
+    "nombre": "Polera Básica Basement",
+    "categoria": "ropa casual",
+    "precio": 9990,
+    "marca": "Basement",
+    "descripcion": "Polera básica de algodón para uso diario.",
+    "colores": [
+      "blanco",
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 60,
+    "tags": [
+      "basico",
+      "barato",
+      "casual",
+      "algodon"
+    ]
+  },
+  {
+    "id": 44,
+    "nombre": "Camisa Dockers Oxford",
+    "categoria": "ropa casual",
+    "precio": 44990,
+    "marca": "Dockers",
+    "descripcion": "Camisa casual de manga larga para oficina informal o uso urbano.",
+    "colores": [
+      "blanco",
+      "azul"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 16,
+    "tags": [
+      "camisa",
+      "oficina",
+      "casual"
+    ]
+  },
+  {
+    "id": 45,
+    "nombre": "Chino Americanino Slim",
+    "categoria": "ropa casual",
+    "precio": 39990,
+    "marca": "Americanino",
+    "descripcion": "Pantalón chino cómodo para look casual o semi formal.",
+    "colores": [
+      "beige",
+      "negro",
+      "azul"
+    ],
+    "tallas": [
+      38,
+      40,
+      42,
+      44,
+      46
+    ],
+    "stock": 18,
+    "tags": [
+      "pantalon",
+      "casual",
+      "oficina"
+    ]
+  },
+  {
+    "id": 46,
+    "nombre": "Chaqueta Denim Lee",
+    "categoria": "ropa casual",
+    "precio": 59990,
+    "marca": "Lee",
+    "descripcion": "Chaqueta de mezclilla para uso casual y entretiempo.",
+    "colores": [
+      "azul",
+      "negro"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 10,
+    "tags": [
+      "chaqueta",
+      "denim",
+      "casual"
+    ]
+  },
+  {
+    "id": 47,
+    "nombre": "Vestido Casual Mango",
+    "categoria": "ropa casual",
+    "precio": 49990,
+    "marca": "Mango",
+    "descripcion": "Vestido casual cómodo para uso diario y salidas informales.",
+    "colores": [
+      "negro",
+      "verde",
+      "beige"
+    ],
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 14,
+    "tags": [
+      "vestido",
+      "casual",
+      "moda"
+    ]
+  },
+  {
+    "id": 48,
+    "nombre": "Falda Midi Alaniz",
+    "categoria": "ropa casual",
+    "precio": 34990,
+    "marca": "Alaniz",
+    "descripcion": "Falda midi versátil para oficina informal o salidas.",
+    "colores": [
+      "negro",
+      "beige"
+    ],
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 12,
+    "tags": [
+      "falda",
+      "casual",
+      "oficina"
+    ]
+  },
+  {
+    "id": 49,
+    "nombre": "Sweater Foster Algodón",
+    "categoria": "ropa casual",
+    "precio": 29990,
+    "marca": "Foster",
+    "descripcion": "Sweater liviano para días frescos y uso diario.",
+    "colores": [
+      "gris",
+      "azul",
+      "verde"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 22,
+    "tags": [
+      "sweater",
+      "casual",
+      "comodidad"
+    ]
+  },
+  {
+    "id": 50,
+    "nombre": "Polera Oversize Sybilla",
+    "categoria": "ropa casual",
+    "precio": 14990,
+    "marca": "Sybilla",
+    "descripcion": "Polera oversize para estilo urbano y relajado.",
+    "colores": [
+      "blanco",
+      "negro",
+      "rosado"
+    ],
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 35,
+    "tags": [
+      "urbano",
+      "casual",
+      "barato"
+    ]
+  },
+  {
+    "id": 51,
+    "nombre": "Jogger Opposite",
+    "categoria": "ropa casual",
+    "precio": 24990,
+    "marca": "Opposite",
+    "descripcion": "Pantalón jogger cómodo para casa, estudio o uso diario.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 28,
+    "tags": [
+      "comodidad",
+      "casual",
+      "casa",
+      "barato"
+    ]
+  },
+  {
+    "id": 52,
+    "nombre": "Blazer Trial",
+    "categoria": "ropa casual",
+    "precio": 79990,
+    "marca": "Trial",
+    "descripcion": "Blazer semi formal para trabajo, reuniones o eventos casuales.",
+    "colores": [
+      "negro",
+      "azul"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 8,
+    "tags": [
+      "oficina",
+      "semi formal",
+      "evento"
+    ]
+  },
+  {
+    "id": 53,
+    "nombre": "Camisa Lino Newport",
+    "categoria": "ropa casual",
+    "precio": 39990,
+    "marca": "Newport",
+    "descripcion": "Camisa de lino liviana para verano y ocasiones casuales.",
+    "colores": [
+      "blanco",
+      "beige",
+      "azul"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 19,
+    "tags": [
+      "verano",
+      "lino",
+      "casual"
+    ]
+  },
+  {
+    "id": 54,
+    "nombre": "Bermuda Maui",
+    "categoria": "ropa casual",
+    "precio": 19990,
+    "marca": "Maui",
+    "descripcion": "Bermuda cómoda para verano, playa y uso casual.",
+    "colores": [
+      "beige",
+      "azul",
+      "negro"
+    ],
+    "tallas": [
+      38,
+      40,
+      42,
+      44
+    ],
+    "stock": 26,
+    "tags": [
+      "verano",
+      "playa",
+      "barato",
+      "casual"
+    ]
+  },
+  {
+    "id": 55,
+    "nombre": "Polerón Hoodie Ripley",
+    "categoria": "ropa casual",
+    "precio": 29990,
+    "marca": "Ripley",
+    "descripcion": "Hoodie cómodo y económico para uso diario.",
+    "colores": [
+      "negro",
+      "gris",
+      "verde"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 30,
+    "tags": [
+      "hoodie",
+      "casual",
+      "barato",
+      "comodidad"
+    ]
+  },
+  {
+    "id": 56,
+    "nombre": "Parka North Ridge",
+    "categoria": "ropa invierno",
+    "precio": 89990,
+    "marca": "North Ridge",
+    "descripcion": "Parka abrigada para invierno, lluvia y bajas temperaturas.",
+    "colores": [
+      "negro",
+      "verde"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 15,
+    "tags": [
+      "invierno",
+      "abrigo",
+      "lluvia",
+      "frio"
+    ]
+  },
+  {
+    "id": 57,
+    "nombre": "Parka Columbia Watertight",
+    "categoria": "ropa invierno",
+    "precio": 129990,
+    "marca": "Columbia",
+    "descripcion": "Parka impermeable para lluvia, viento y actividades outdoor.",
+    "colores": [
+      "negro",
+      "azul"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 8,
+    "tags": [
+      "invierno",
+      "lluvia",
+      "impermeable",
+      "outdoor"
+    ]
+  },
+  {
+    "id": 58,
+    "nombre": "Chaqueta Pluma Lippi",
+    "categoria": "ropa invierno",
+    "precio": 119990,
+    "marca": "Lippi",
+    "descripcion": "Chaqueta térmica liviana para frío y caminatas outdoor.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 10,
+    "tags": [
+      "invierno",
+      "frio",
+      "termico",
+      "outdoor"
+    ]
+  },
+  {
+    "id": 59,
+    "nombre": "Abrigo Alaniz Lana",
+    "categoria": "ropa invierno",
+    "precio": 99990,
+    "marca": "Alaniz",
+    "descripcion": "Abrigo elegante para invierno, oficina y ocasiones formales.",
+    "colores": [
+      "negro",
+      "beige",
+      "café"
+    ],
+    "tallas": [
+      "XS",
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 7,
+    "tags": [
+      "invierno",
+      "abrigo",
+      "formal",
+      "oficina"
+    ]
+  },
+  {
+    "id": 60,
+    "nombre": "Polar Patagonia Synchilla",
+    "categoria": "ropa invierno",
+    "precio": 84990,
+    "marca": "Patagonia",
+    "descripcion": "Polar cálido para outdoor, viajes y uso diario.",
+    "colores": [
+      "azul",
+      "verde",
+      "gris"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 9,
+    "tags": [
+      "polar",
+      "invierno",
+      "outdoor",
+      "abrigo"
+    ]
+  },
+  {
+    "id": 61,
+    "nombre": "Polar Doite Thermic",
+    "categoria": "ropa invierno",
+    "precio": 39990,
+    "marca": "Doite",
+    "descripcion": "Polar económico para capas de abrigo y clima fresco.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 24,
+    "tags": [
+      "polar",
+      "barato",
+      "invierno",
+      "abrigo"
+    ]
+  },
+  {
+    "id": 62,
+    "nombre": "Chaqueta Softshell The North Face",
+    "categoria": "ropa invierno",
+    "precio": 109990,
+    "marca": "The North Face",
+    "descripcion": "Chaqueta softshell resistente al viento para clima frío.",
+    "colores": [
+      "negro",
+      "verde"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 6,
+    "tags": [
+      "viento",
+      "invierno",
+      "outdoor",
+      "chaqueta"
+    ]
+  },
+  {
+    "id": 63,
+    "nombre": "Bufanda Basement Knit",
+    "categoria": "accesorios invierno",
+    "precio": 12990,
+    "marca": "Basement",
+    "descripcion": "Bufanda tejida para abrigo diario en invierno.",
+    "colores": [
+      "gris",
+      "negro",
+      "beige"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 40,
+    "tags": [
+      "bufanda",
+      "invierno",
+      "barato",
+      "abrigo"
+    ]
+  },
+  {
+    "id": 64,
+    "nombre": "Gorro Lana Andesgear",
+    "categoria": "accesorios invierno",
+    "precio": 9990,
+    "marca": "Andesgear",
+    "descripcion": "Gorro de lana cómodo para días fríos.",
+    "colores": [
+      "negro",
+      "gris",
+      "azul"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 45,
+    "tags": [
+      "gorro",
+      "invierno",
+      "barato",
+      "frio"
+    ]
+  },
+  {
+    "id": 65,
+    "nombre": "Guantes Térmicos Lippi",
+    "categoria": "accesorios invierno",
+    "precio": 19990,
+    "marca": "Lippi",
+    "descripcion": "Guantes térmicos para frío, trekking y actividades outdoor.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 18,
+    "tags": [
+      "guantes",
+      "invierno",
+      "termico",
+      "outdoor"
+    ]
+  },
+  {
+    "id": 66,
+    "nombre": "Primera Capa Doite",
+    "categoria": "ropa invierno",
+    "precio": 24990,
+    "marca": "Doite",
+    "descripcion": "Primera capa térmica para actividades outdoor y bajas temperaturas.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 17,
+    "tags": [
+      "termico",
+      "primera capa",
+      "invierno",
+      "outdoor"
+    ]
+  },
+  {
+    "id": 67,
+    "nombre": "Calcetines Térmicos Monarch Pack 2",
+    "categoria": "accesorios invierno",
+    "precio": 14990,
+    "marca": "Monarch",
+    "descripcion": "Calcetines térmicos para mantener el calor en días fríos.",
+    "colores": [
+      "gris",
+      "negro"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L"
+    ],
+    "stock": 35,
+    "tags": [
+      "calcetines",
+      "invierno",
+      "termico",
+      "barato"
+    ]
+  },
+  {
+    "id": 68,
+    "nombre": "Impermeable RainPro",
+    "categoria": "ropa invierno",
+    "precio": 34990,
+    "marca": "RainPro",
+    "descripcion": "Impermeable liviano para lluvia urbana y traslados diarios.",
+    "colores": [
+      "negro",
+      "amarillo",
+      "azul"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 19,
+    "tags": [
+      "lluvia",
+      "impermeable",
+      "barato",
+      "invierno"
+    ]
+  },
+  {
+    "id": 69,
+    "nombre": "Trench Coat Trial",
+    "categoria": "ropa invierno",
+    "precio": 89990,
+    "marca": "Trial",
+    "descripcion": "Abrigo tipo trench para lluvia ligera y uso de oficina.",
+    "colores": [
+      "beige",
+      "negro"
+    ],
+    "tallas": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "stock": 9,
+    "tags": [
+      "lluvia",
+      "oficina",
+      "abrigo",
+      "formal"
+    ]
+  },
+  {
+    "id": 70,
+    "nombre": "Parka Niños Mountain Kids",
+    "categoria": "ropa invierno",
+    "precio": 59990,
+    "marca": "Mountain Kids",
+    "descripcion": "Parka infantil abrigada para invierno y lluvia ligera.",
+    "colores": [
+      "azul",
+      "rojo",
+      "verde"
+    ],
+    "tallas": [
+      "4",
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "stock": 16,
+    "tags": [
+      "niños",
+      "invierno",
+      "abrigo",
+      "lluvia"
+    ]
+  },
+  {
+    "id": 71,
+    "nombre": "Mochila Jansport SuperBreak",
+    "categoria": "mochilas y bolsos",
+    "precio": 34990,
+    "marca": "Jansport",
+    "descripcion": "Mochila liviana para colegio, universidad y uso diario.",
+    "colores": [
+      "negro",
+      "azul",
+      "rojo"
+    ],
+    "tallas": [
+      "25L"
+    ],
+    "stock": 24,
+    "tags": [
+      "mochila",
+      "colegio",
+      "universidad",
+      "diario"
+    ]
+  },
+  {
+    "id": 72,
+    "nombre": "Mochila Samsonite Guardit",
+    "categoria": "mochilas y bolsos",
+    "precio": 69990,
+    "marca": "Samsonite",
+    "descripcion": "Mochila para notebook con compartimentos de trabajo y estudio.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "15.6 pulgadas"
+    ],
+    "stock": 13,
+    "tags": [
+      "notebook",
+      "trabajo",
+      "universidad",
+      "mochila"
+    ]
+  },
+  {
+    "id": 73,
+    "nombre": "Mochila Adidas Classic",
+    "categoria": "mochilas y bolsos",
+    "precio": 29990,
+    "marca": "Adidas",
+    "descripcion": "Mochila deportiva simple para gimnasio o uso urbano.",
+    "colores": [
+      "negro",
+      "azul"
+    ],
+    "tallas": [
+      "24L"
+    ],
+    "stock": 22,
+    "tags": [
+      "deporte",
+      "gimnasio",
+      "urbano",
+      "mochila"
+    ]
+  },
+  {
+    "id": 74,
+    "nombre": "Bolso Tote Basement",
+    "categoria": "mochilas y bolsos",
+    "precio": 19990,
+    "marca": "Basement",
+    "descripcion": "Bolso tote amplio para compras, universidad y uso diario.",
+    "colores": [
+      "beige",
+      "negro"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 30,
+    "tags": [
+      "tote",
+      "compras",
+      "universidad",
+      "barato"
+    ]
+  },
+  {
+    "id": 75,
+    "nombre": "Mochila Outdoor Doite 35L",
+    "categoria": "mochilas y bolsos",
+    "precio": 59990,
+    "marca": "Doite",
+    "descripcion": "Mochila de trekking para salidas outdoor y caminatas largas.",
+    "colores": [
+      "verde",
+      "negro"
+    ],
+    "tallas": [
+      "35L"
+    ],
+    "stock": 10,
+    "tags": [
+      "trekking",
+      "outdoor",
+      "mochila",
+      "cerro"
+    ]
+  },
+  {
+    "id": 76,
+    "nombre": "Banano Urban Sport",
+    "categoria": "mochilas y bolsos",
+    "precio": 14990,
+    "marca": "Urban",
+    "descripcion": "Banano compacto para celular, llaves y salidas urbanas.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 38,
+    "tags": [
+      "banano",
+      "urbano",
+      "barato",
+      "accesorio"
+    ]
+  },
+  {
+    "id": 77,
+    "nombre": "Cartera Amphora Crossbody",
+    "categoria": "mochilas y bolsos",
+    "precio": 39990,
+    "marca": "Amphora",
+    "descripcion": "Cartera cruzada para uso diario y salidas casuales.",
+    "colores": [
+      "negro",
+      "café",
+      "beige"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 18,
+    "tags": [
+      "cartera",
+      "casual",
+      "diario"
+    ]
+  },
+  {
+    "id": 78,
+    "nombre": "Mochila HP Prelude",
+    "categoria": "mochilas y bolsos",
+    "precio": 24990,
+    "marca": "HP",
+    "descripcion": "Mochila económica para notebook y accesorios básicos.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "15.6 pulgadas"
+    ],
+    "stock": 20,
+    "tags": [
+      "notebook",
+      "barato",
+      "trabajo",
+      "mochila"
+    ]
+  },
+  {
+    "id": 79,
+    "nombre": "Bolso Deportivo Adidas Duffel",
+    "categoria": "mochilas y bolsos",
+    "precio": 44990,
+    "marca": "Adidas",
+    "descripcion": "Bolso deportivo para entrenamiento, gimnasio o viajes cortos.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "40L"
+    ],
+    "stock": 14,
+    "tags": [
+      "gimnasio",
+      "deporte",
+      "bolso"
+    ]
+  },
+  {
+    "id": 80,
+    "nombre": "Mochila Antirrobo Xiaomi",
+    "categoria": "mochilas y bolsos",
+    "precio": 39990,
+    "marca": "Xiaomi",
+    "descripcion": "Mochila urbana con diseño antirrobo para notebook y transporte diario.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "15L"
+    ],
+    "stock": 16,
+    "tags": [
+      "notebook",
+      "urbano",
+      "seguridad",
+      "mochila"
+    ]
+  },
+  {
+    "id": 81,
+    "nombre": "Audífonos Sony WH-CH520",
+    "categoria": "tecnología",
+    "precio": 49990,
+    "marca": "Sony",
+    "descripcion": "Audífonos bluetooth livianos para música, estudio y llamadas.",
+    "colores": [
+      "negro",
+      "azul",
+      "blanco"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 25,
+    "tags": [
+      "audio",
+      "bluetooth",
+      "estudio",
+      "llamadas"
+    ]
+  },
+  {
+    "id": 82,
+    "nombre": "Audífonos JBL Tune 520BT",
+    "categoria": "tecnología",
+    "precio": 54990,
+    "marca": "JBL",
+    "descripcion": "Audífonos inalámbricos con buen sonido para uso diario.",
+    "colores": [
+      "negro",
+      "blanco"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 20,
+    "tags": [
+      "audio",
+      "bluetooth",
+      "musica"
+    ]
+  },
+  {
+    "id": 83,
+    "nombre": "AirPods 3ra Generación",
+    "categoria": "tecnología",
+    "precio": 189990,
+    "marca": "Apple",
+    "descripcion": "Audífonos inalámbricos para iPhone, llamadas y música.",
+    "colores": [
+      "blanco"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 8,
+    "tags": [
+      "audio",
+      "apple",
+      "bluetooth",
+      "premium"
+    ]
+  },
+  {
+    "id": 84,
+    "nombre": "Mouse Logitech M185",
+    "categoria": "tecnología",
+    "precio": 9990,
+    "marca": "Logitech",
+    "descripcion": "Mouse inalámbrico económico para oficina, estudio y notebook.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 45,
+    "tags": [
+      "mouse",
+      "oficina",
+      "barato",
+      "notebook"
+    ]
+  },
+  {
+    "id": 85,
+    "nombre": "Teclado Logitech K380",
+    "categoria": "tecnología",
+    "precio": 39990,
+    "marca": "Logitech",
+    "descripcion": "Teclado bluetooth compacto para computador, tablet y celular.",
+    "colores": [
+      "negro",
+      "rosado",
+      "blanco"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 18,
+    "tags": [
+      "teclado",
+      "bluetooth",
+      "estudio",
+      "trabajo"
+    ]
+  },
+  {
+    "id": 86,
+    "nombre": "Notebook Lenovo IdeaPad 3",
+    "categoria": "tecnología",
+    "precio": 399990,
+    "marca": "Lenovo",
+    "descripcion": "Notebook para estudio, navegación, ofimática y clases online.",
+    "colores": [
+      "gris"
+    ],
+    "tallas": [
+      "15.6 pulgadas"
+    ],
+    "stock": 6,
+    "tags": [
+      "notebook",
+      "estudio",
+      "trabajo",
+      "ofimatica"
+    ]
+  },
+  {
+    "id": 87,
+    "nombre": "Notebook HP Pavilion 14",
+    "categoria": "tecnología",
+    "precio": 599990,
+    "marca": "HP",
+    "descripcion": "Notebook liviano para universidad, trabajo y multitarea diaria.",
+    "colores": [
+      "gris"
+    ],
+    "tallas": [
+      "14 pulgadas"
+    ],
+    "stock": 5,
+    "tags": [
+      "notebook",
+      "universidad",
+      "trabajo"
+    ]
+  },
+  {
+    "id": 88,
+    "nombre": "Tablet Samsung Galaxy Tab A9",
+    "categoria": "tecnología",
+    "precio": 179990,
+    "marca": "Samsung",
+    "descripcion": "Tablet compacta para clases, lectura, videos y navegación.",
+    "colores": [
+      "gris",
+      "azul"
+    ],
+    "tallas": [
+      "64GB"
+    ],
+    "stock": 12,
+    "tags": [
+      "tablet",
+      "estudio",
+      "videos",
+      "lectura"
+    ]
+  },
+  {
+    "id": 89,
+    "nombre": "Kindle Paperwhite",
+    "categoria": "tecnología",
+    "precio": 149990,
+    "marca": "Amazon",
+    "descripcion": "Lector electrónico resistente y cómodo para lectura prolongada.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "16GB"
+    ],
+    "stock": 9,
+    "tags": [
+      "lectura",
+      "libros",
+      "regalo",
+      "tecnologia"
+    ]
+  },
+  {
+    "id": 90,
+    "nombre": "Smartwatch Xiaomi Band 8",
+    "categoria": "tecnología",
+    "precio": 39990,
+    "marca": "Xiaomi",
+    "descripcion": "Pulsera inteligente para pasos, deporte, sueño y notificaciones.",
+    "colores": [
+      "negro",
+      "rosado"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 26,
+    "tags": [
+      "smartwatch",
+      "deporte",
+      "salud",
+      "barato"
+    ]
+  },
+  {
+    "id": 91,
+    "nombre": "Smartwatch Samsung Galaxy Watch",
+    "categoria": "tecnología",
+    "precio": 199990,
+    "marca": "Samsung",
+    "descripcion": "Reloj inteligente para deporte, salud y conexión con smartphone.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "40mm",
+      "44mm"
+    ],
+    "stock": 7,
+    "tags": [
+      "smartwatch",
+      "deporte",
+      "salud",
+      "premium"
+    ]
+  },
+  {
+    "id": 92,
+    "nombre": "Power Bank Anker 10000mAh",
+    "categoria": "tecnología",
+    "precio": 29990,
+    "marca": "Anker",
+    "descripcion": "Batería portátil para cargar celular durante viajes o emergencias.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "10000mAh"
+    ],
+    "stock": 28,
+    "tags": [
+      "bateria",
+      "viaje",
+      "celular",
+      "carga"
+    ]
+  },
+  {
+    "id": 93,
+    "nombre": "Cargador USB-C Samsung 25W",
+    "categoria": "tecnología",
+    "precio": 19990,
+    "marca": "Samsung",
+    "descripcion": "Cargador rápido USB-C compatible con celulares modernos.",
+    "colores": [
+      "blanco",
+      "negro"
+    ],
+    "tallas": [
+      "25W"
+    ],
+    "stock": 35,
+    "tags": [
+      "cargador",
+      "celular",
+      "rapido"
+    ]
+  },
+  {
+    "id": 94,
+    "nombre": "Parlante JBL Go 3",
+    "categoria": "tecnología",
+    "precio": 39990,
+    "marca": "JBL",
+    "descripcion": "Parlante bluetooth compacto resistente al agua para música portátil.",
+    "colores": [
+      "negro",
+      "azul",
+      "rojo"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 17,
+    "tags": [
+      "parlante",
+      "bluetooth",
+      "musica",
+      "agua"
+    ]
+  },
+  {
+    "id": 95,
+    "nombre": "Webcam Logitech C920",
+    "categoria": "tecnología",
+    "precio": 79990,
+    "marca": "Logitech",
+    "descripcion": "Webcam Full HD para reuniones, clases online y streaming.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "Full HD"
+    ],
+    "stock": 10,
+    "tags": [
+      "webcam",
+      "clases",
+      "trabajo",
+      "streaming"
+    ]
+  },
+  {
+    "id": 96,
+    "nombre": "Monitor Samsung 24 pulgadas",
+    "categoria": "tecnología",
+    "precio": 119990,
+    "marca": "Samsung",
+    "descripcion": "Monitor Full HD para trabajo, estudio y escritorio.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "24 pulgadas"
+    ],
+    "stock": 8,
+    "tags": [
+      "monitor",
+      "trabajo",
+      "estudio",
+      "oficina"
+    ]
+  },
+  {
+    "id": 97,
+    "nombre": "Disco SSD Kingston 1TB",
+    "categoria": "tecnología",
+    "precio": 79990,
+    "marca": "Kingston",
+    "descripcion": "Unidad SSD portátil para respaldos, archivos y trabajo.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "1TB"
+    ],
+    "stock": 15,
+    "tags": [
+      "almacenamiento",
+      "ssd",
+      "trabajo",
+      "respaldo"
+    ]
+  },
+  {
+    "id": 98,
+    "nombre": "Impresora HP DeskJet",
+    "categoria": "tecnología",
+    "precio": 69990,
+    "marca": "HP",
+    "descripcion": "Impresora multifuncional para hogar, tareas y documentos.",
+    "colores": [
+      "blanco"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 9,
+    "tags": [
+      "impresora",
+      "hogar",
+      "estudio",
+      "documentos"
+    ]
+  },
+  {
+    "id": 99,
+    "nombre": "Router TP-Link Archer",
+    "categoria": "tecnología",
+    "precio": 49990,
+    "marca": "TP-Link",
+    "descripcion": "Router WiFi para mejorar conexión en casa u oficina.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 11,
+    "tags": [
+      "internet",
+      "wifi",
+      "hogar",
+      "oficina"
+    ]
+  },
+  {
+    "id": 100,
+    "nombre": "Control Gamer Xbox",
+    "categoria": "tecnología",
+    "precio": 69990,
+    "marca": "Microsoft",
+    "descripcion": "Control inalámbrico para consola, PC y juegos casuales.",
+    "colores": [
+      "negro",
+      "blanco"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 13,
+    "tags": [
+      "gaming",
+      "control",
+      "juegos"
+    ]
+  },
+  {
+    "id": 101,
+    "nombre": "Freidora de Aire Oster 4L",
+    "categoria": "hogar",
+    "precio": 79990,
+    "marca": "Oster",
+    "descripcion": "Freidora de aire para cocinar con menos aceite en casa.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "4L"
+    ],
+    "stock": 12,
+    "tags": [
+      "cocina",
+      "saludable",
+      "hogar",
+      "comida"
+    ]
+  },
+  {
+    "id": 102,
+    "nombre": "Cafetera Nespresso Essenza",
+    "categoria": "hogar",
+    "precio": 99990,
+    "marca": "Nespresso",
+    "descripcion": "Cafetera compacta para preparar café en cápsulas.",
+    "colores": [
+      "negro",
+      "blanco"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 10,
+    "tags": [
+      "cafe",
+      "cocina",
+      "hogar"
+    ]
+  },
+  {
+    "id": 103,
+    "nombre": "Hervidor Thomas 1.7L",
+    "categoria": "hogar",
+    "precio": 19990,
+    "marca": "Thomas",
+    "descripcion": "Hervidor eléctrico económico para té, café y cocina diaria.",
+    "colores": [
+      "blanco",
+      "negro"
+    ],
+    "tallas": [
+      "1.7L"
+    ],
+    "stock": 30,
+    "tags": [
+      "cocina",
+      "barato",
+      "te",
+      "cafe"
+    ]
+  },
+  {
+    "id": 104,
+    "nombre": "Aspiradora Samsung PowerStick",
+    "categoria": "hogar",
+    "precio": 159990,
+    "marca": "Samsung",
+    "descripcion": "Aspiradora inalámbrica para limpieza rápida del hogar.",
+    "colores": [
+      "gris",
+      "negro"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 7,
+    "tags": [
+      "limpieza",
+      "hogar",
+      "aspiradora"
+    ]
+  },
+  {
+    "id": 105,
+    "nombre": "Robot Aspirador Xiaomi E10",
+    "categoria": "hogar",
+    "precio": 199990,
+    "marca": "Xiaomi",
+    "descripcion": "Robot aspirador para limpieza automática de pisos.",
+    "colores": [
+      "blanco"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 5,
+    "tags": [
+      "limpieza",
+      "robot",
+      "hogar",
+      "tecnologia"
+    ]
+  },
+  {
+    "id": 106,
+    "nombre": "Set Sartenes Tefal 3 piezas",
+    "categoria": "hogar",
+    "precio": 59990,
+    "marca": "Tefal",
+    "descripcion": "Set de sartenes antiadherentes para cocina diaria.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "set"
+    ],
+    "stock": 14,
+    "tags": [
+      "cocina",
+      "sarten",
+      "hogar"
+    ]
+  },
+  {
+    "id": 107,
+    "nombre": "Licuadora Oster Classic",
+    "categoria": "hogar",
+    "precio": 44990,
+    "marca": "Oster",
+    "descripcion": "Licuadora para batidos, jugos y preparación de alimentos.",
+    "colores": [
+      "gris",
+      "negro"
+    ],
+    "tallas": [
+      "1.5L"
+    ],
+    "stock": 16,
+    "tags": [
+      "cocina",
+      "batidos",
+      "jugos"
+    ]
+  },
+  {
+    "id": 108,
+    "nombre": "Plancha Philips Vapor",
+    "categoria": "hogar",
+    "precio": 34990,
+    "marca": "Philips",
+    "descripcion": "Plancha a vapor para ropa de uso diario.",
+    "colores": [
+      "azul",
+      "blanco"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 18,
+    "tags": [
+      "ropa",
+      "hogar",
+      "plancha"
+    ]
+  },
+  {
+    "id": 109,
+    "nombre": "Organizador Plástico Rimax",
+    "categoria": "hogar",
+    "precio": 14990,
+    "marca": "Rimax",
+    "descripcion": "Caja organizadora para closet, bodega o escritorio.",
+    "colores": [
+      "transparente",
+      "gris"
+    ],
+    "tallas": [
+      "30L"
+    ],
+    "stock": 40,
+    "tags": [
+      "organizacion",
+      "hogar",
+      "barato"
+    ]
+  },
+  {
+    "id": 110,
+    "nombre": "Juego Sábanas Cannon 2 Plazas",
+    "categoria": "hogar",
+    "precio": 29990,
+    "marca": "Cannon",
+    "descripcion": "Juego de sábanas suaves para cama de dos plazas.",
+    "colores": [
+      "blanco",
+      "gris",
+      "azul"
+    ],
+    "tallas": [
+      "2 plazas"
+    ],
+    "stock": 22,
+    "tags": [
+      "dormitorio",
+      "cama",
+      "hogar"
+    ]
+  },
+  {
+    "id": 111,
+    "nombre": "Almohada Rosen Soft",
+    "categoria": "hogar",
+    "precio": 19990,
+    "marca": "Rosen",
+    "descripcion": "Almohada cómoda para descanso diario.",
+    "colores": [
+      "blanco"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 27,
+    "tags": [
+      "dormitorio",
+      "descanso",
+      "hogar"
+    ]
+  },
+  {
+    "id": 112,
+    "nombre": "Toalla Cannon Baño",
+    "categoria": "hogar",
+    "precio": 12990,
+    "marca": "Cannon",
+    "descripcion": "Toalla de baño suave y absorbente para uso diario.",
+    "colores": [
+      "blanco",
+      "gris",
+      "azul"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 45,
+    "tags": [
+      "baño",
+      "toalla",
+      "hogar",
+      "barato"
+    ]
+  },
+  {
+    "id": 113,
+    "nombre": "Lámpara Escritorio LED",
+    "categoria": "hogar",
+    "precio": 24990,
+    "marca": "HomeTech",
+    "descripcion": "Lámpara LED para estudio, lectura y trabajo en escritorio.",
+    "colores": [
+      "blanco",
+      "negro"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 20,
+    "tags": [
+      "estudio",
+      "luz",
+      "escritorio",
+      "hogar"
+    ]
+  },
+  {
+    "id": 114,
+    "nombre": "Silla Escritorio ErgoBasic",
+    "categoria": "hogar",
+    "precio": 89990,
+    "marca": "MueblesPro",
+    "descripcion": "Silla ergonómica básica para estudio o teletrabajo.",
+    "colores": [
+      "negro",
+      "gris"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 9,
+    "tags": [
+      "oficina",
+      "estudio",
+      "ergonomia",
+      "hogar"
+    ]
+  },
+  {
+    "id": 115,
+    "nombre": "Mesa Plegable Home",
+    "categoria": "hogar",
+    "precio": 39990,
+    "marca": "Home",
+    "descripcion": "Mesa plegable para espacios pequeños, estudio o comedor auxiliar.",
+    "colores": [
+      "blanco",
+      "negro"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 15,
+    "tags": [
+      "mesa",
+      "hogar",
+      "espacio pequeño"
+    ]
+  },
+  {
+    "id": 116,
+    "nombre": "Crema Hidratante CeraVe",
+    "categoria": "belleza y cuidado personal",
+    "precio": 14990,
+    "marca": "CeraVe",
+    "descripcion": "Crema hidratante para rostro y cuerpo, piel normal a seca.",
+    "colores": [
+      "blanco"
+    ],
+    "tallas": [
+      "340g"
+    ],
+    "stock": 30,
+    "tags": [
+      "cuidado personal",
+      "hidratacion",
+      "piel"
+    ]
+  },
+  {
+    "id": 117,
+    "nombre": "Protector Solar La Roche-Posay SPF50",
+    "categoria": "belleza y cuidado personal",
+    "precio": 21990,
+    "marca": "La Roche-Posay",
+    "descripcion": "Protector solar facial de alta protección para uso diario.",
+    "colores": [
+      "blanco"
+    ],
+    "tallas": [
+      "50ml"
+    ],
+    "stock": 20,
+    "tags": [
+      "protector solar",
+      "piel",
+      "cuidado",
+      "verano"
+    ]
+  },
+  {
+    "id": 118,
+    "nombre": "Shampoo Dove Reparación",
+    "categoria": "belleza y cuidado personal",
+    "precio": 5990,
+    "marca": "Dove",
+    "descripcion": "Shampoo para cabello dañado, uso frecuente y reparación.",
+    "colores": [
+      "blanco"
+    ],
+    "tallas": [
+      "400ml"
+    ],
+    "stock": 50,
+    "tags": [
+      "cabello",
+      "shampoo",
+      "barato"
+    ]
+  },
+  {
+    "id": 119,
+    "nombre": "Acondicionador Pantene Hidratación",
+    "categoria": "belleza y cuidado personal",
+    "precio": 5990,
+    "marca": "Pantene",
+    "descripcion": "Acondicionador hidratante para cabello seco.",
+    "colores": [
+      "blanco",
+      "dorado"
+    ],
+    "tallas": [
+      "400ml"
+    ],
+    "stock": 48,
+    "tags": [
+      "cabello",
+      "hidratacion",
+      "barato"
+    ]
+  },
+  {
+    "id": 120,
+    "nombre": "Secador de Pelo Philips",
+    "categoria": "belleza y cuidado personal",
+    "precio": 29990,
+    "marca": "Philips",
+    "descripcion": "Secador de pelo compacto para uso diario.",
+    "colores": [
+      "negro",
+      "rosado"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 14,
+    "tags": [
+      "cabello",
+      "secador",
+      "cuidado personal"
+    ]
+  },
+  {
+    "id": 121,
+    "nombre": "Plancha de Pelo Remington",
+    "categoria": "belleza y cuidado personal",
+    "precio": 34990,
+    "marca": "Remington",
+    "descripcion": "Plancha alisadora para cabello con placas cerámicas.",
+    "colores": [
+      "negro"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 12,
+    "tags": [
+      "cabello",
+      "plancha",
+      "alisado"
+    ]
+  },
+  {
+    "id": 122,
+    "nombre": "Perfume Benetton Colors",
+    "categoria": "belleza y cuidado personal",
+    "precio": 24990,
+    "marca": "Benetton",
+    "descripcion": "Perfume casual para uso diario y regalo.",
+    "colores": [
+      "transparente"
+    ],
+    "tallas": [
+      "100ml"
+    ],
+    "stock": 16,
+    "tags": [
+      "perfume",
+      "regalo",
+      "casual"
+    ]
+  },
+  {
+    "id": 123,
+    "nombre": "Set Maquillaje Maybelline",
+    "categoria": "belleza y cuidado personal",
+    "precio": 19990,
+    "marca": "Maybelline",
+    "descripcion": "Set básico de maquillaje para uso diario.",
+    "colores": [
+      "negro",
+      "rosado"
+    ],
+    "tallas": [
+      "set"
+    ],
+    "stock": 18,
+    "tags": [
+      "maquillaje",
+      "regalo",
+      "belleza"
+    ]
+  },
+  {
+    "id": 124,
+    "nombre": "Rasuradora Gillette Mach3",
+    "categoria": "belleza y cuidado personal",
+    "precio": 9990,
+    "marca": "Gillette",
+    "descripcion": "Rasuradora manual para afeitado diario.",
+    "colores": [
+      "azul"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 35,
+    "tags": [
+      "afeitado",
+      "cuidado personal",
+      "barato"
+    ]
+  },
+  {
+    "id": 125,
+    "nombre": "Cepillo Eléctrico Oral-B",
+    "categoria": "belleza y cuidado personal",
+    "precio": 29990,
+    "marca": "Oral-B",
+    "descripcion": "Cepillo dental eléctrico para limpieza diaria.",
+    "colores": [
+      "blanco",
+      "azul"
+    ],
+    "tallas": [
+      "unica"
+    ],
+    "stock": 20,
+    "tags": [
+      "dental",
+      "cuidado personal",
+      "salud"
+    ]
+  }
+]
