@@ -13,15 +13,13 @@ Solo redacta respuestas naturales basándose en lo que recibe.
 Los productos vienen previamente filtrados por search.py.
 """
 
+import re
+import time
 import google.generativeai as genai
-from config.settings import GEMINI_API_KEY
+from config.settings import GEMINI_API_KEY, GEMINI_MODEL
 
 # Configurar la API de Gemini al importar este módulo
 genai.configure(api_key=GEMINI_API_KEY)
-
-# Modelo a usar
-GEMINI_MODEL = "gemini-2.5-flash-lite"  # Rápido y gratuito. Alternativa: "gemini-1.5-pro"
-
 
 def _format_products(products: list) -> str:
     """
@@ -36,12 +34,14 @@ def _format_products(products: list) -> str:
         colores = ", ".join(p.get("colores", []))
         tallas = ", ".join(str(t) for t in p.get("tallas", []))
         precio = f"${p.get('precio', 0):,}".replace(",", ".")
+        stock = p.get("stock", 0)
+        stock_label = f"{stock} (SIN STOCK - No disponible actualmente)" if stock <= 0 else f"{stock} unidades disponibles"
         lines.append(
             f"{i}. {p['nombre']} ({p.get('marca', '')}) | "
             f"Precio: {precio} | "
             f"Colores: {colores} | "
             f"Tallas: {tallas} | "
-            f"Stock: {p.get('stock', 0)} | "
+            f"Stock: {stock_label} | "
             f"Descripción: {p.get('descripcion', '')} | "
             f"Categoría: {p.get('categoria', '')}"
         )
@@ -70,15 +70,13 @@ REGLAS ESTRICTAS:
 5. Responde siempre en español, de manera amable y natural.
 6. Sé conciso pero informativo. No hagas listas innecesarias cuando puedes responder en prosa.
 7. Si el cliente pregunta por políticas, usa solo la información de políticas proporcionada.
+8. Si un producto esta marcado como "SIN STOCK", NO lo recomiendes como primera opción. Puedes mencionarlo solo si 
+el cliente pregunta especificamente por él, aclarando que no está disponible por el momento y sugiriendo una alternativa 
+con stock si existe entre los productos entregados.
 """
 
 
-def generate_response(
-    user_message: str,
-    products: list,
-    history: list,
-    policy_info: str = None,
-) -> str:
+def generate_response(user_message: str, products: list, history: list, policy_info: str = None) -> str:
     """
     Genera una respuesta natural usando Gemini.
 
@@ -88,7 +86,7 @@ def generate_response(
         history: Historial de conversación reciente del usuario.
         policy_info: Texto de política relevante encontrado (puede ser None).
 
-    Returns:
+    Retorna:
         str: Respuesta en lenguaje natural para enviar al usuario.
     """
     model = genai.GenerativeModel(
@@ -125,8 +123,36 @@ def generate_response(
         response = model.generate_content(full_prompt)
         return response.text.strip()
     except Exception as e:
+        error_str = str(e)
+        # Si es un error de cuota (429), esperar el tiempo sugerido y reintentar una vez
+        if "429" in error_str or "quota" in error_str.lower():
+            wait_time = _extract_retry_delay(error_str)
+            print(f"Cuota excedida. Reintentando en {wait_time}s...")
+            time.sleep(wait_time)
+            try:
+                response = model.generate_content(full_prompt)
+                return response.text.strip()
+            except Exception as retry_error:
+                print(f"Error en Gemini (Tras reintento): {retry_error}")
+                return (
+                    "Estoy recibiendo muchas consultas en este momento. "
+                    "Por favor espera unos segundos y vuelve a preguntar."
+                )
         print(f"Error en Gemini: {e}")
         return (
             "Lo siento, tuve un problema técnico al procesar tu consulta. "
             "Por favor intenta de nuevo en unos segundos."
         )
+    
+def _extract_retry_delay(error_str: str, default: int = 15) -> int:
+    """
+    Extrae el tiempo de espera sugerido por la API desde el mensaje de error.
+    Si no lo encuentra, retorna un valor por defecto.
+    """
+    match = re.search(r"retry_delay\s*\{\s*seconds:\s*(\d+)", error_str)
+    if match:
+        return int(match.group(1)) + 1  # +1 segundo de margen
+    match = re.search(r"retry in ([\d.]+)s", error_str)
+    if match:
+        return int(float(match.group(1))) + 1
+    return default

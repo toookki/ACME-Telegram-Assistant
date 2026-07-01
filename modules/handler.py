@@ -12,11 +12,12 @@ Es el cerebro del flujo conversacional. Orquesta todos los módulos:
   6. Actualiza la memoria con el turno actual.
   7. Envía la respuesta al usuario en Telegram.
 
-También maneja los comandos /start y /reset.
+También maneja los comandos /start /reset y /help.
 """
 
 from telegram import Update
 from telegram.ext import ContextTypes
+from telegram.constants import ParseMode
 
 from modules import memory, search, llm
 
@@ -26,7 +27,7 @@ POLICY_KEYWORDS = [
     "cambio", "devolucion", "devolución", "garantia", "garantía",
     "pago", "tarjeta", "transferencia", "despacho", "envio", "envío",
     "entrega", "seguimiento", "pedido", "retirar", "retiro",
-    "stock", "disponible", "promo", "descuento", "soporte",
+    "stock", "disponible", "promo", "promoción", "promocion", "descuento", "soporte",
     "reclamo", "seguridad", "privacidad"
 ]
 
@@ -47,10 +48,11 @@ async def handle_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     memory.clear_user(user_id)
 
     await update.message.reply_text(
-        f"¡Hola {name}! Soy el asistente virtual de ACME.\n\n"
+        f"¡Hola <b>{name}</b>! Soy el asistente virtual de ACME.\n\n"
         "Puedo ayudarte a encontrar productos, responder preguntas sobre "
         "cambios, devoluciones, despacho y más.\n\n"
-        "¿En qué te puedo ayudar hoy?"
+        "Escribe /help si quieres ver ejemplos de lo que puedo hacer.\n\n"
+        "¿En qué te puedo ayudar hoy?", parse_mode=ParseMode.HTML
     )
 
 
@@ -65,6 +67,39 @@ async def handle_reset(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Conversación reiniciada. ¿En qué te puedo ayudar?"
     )
 
+async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """
+    Handler para el comando /help.
+    Explica que puede hacer el bot y da ejemplos de mensajes que entiende.
+    """
+    help_text = (
+        "<b>Asistente Virtual ACME</b>\n\n"
+        "Puedo ayudarte a:\n"
+        "• Buscar productos por descripción, color, talla, marca o precio\n"
+        "• Recordar el contexto de la conversación (ej: \"la segunda\", \"esa negra\")\n"
+        "• Responder preguntas sobre cambios, devoluciones, pagos, despacho y garantía\n\n"
+        "<b>Ejemplos de mensajes que puedes escribir:</b>\n"
+        "\"Busco algo cómodo para caminar mucho\"\n"
+        "\"Quiero zapatillas negras talla 42\"\n"
+        "\"¿Cuál me conviene si quiero algo más barato?\"\n"
+        "\"¿Puedo cambiar un producto si no me queda?\"\n\n"
+        "<b>Comandos disponibles:</b>\n"
+        "/start - Iniciar o reiniciar la conversación\n"
+        "/reset - Borrar el historial de la conversación actual\n"
+        "/help - Mostrar esta ayuda"
+    )
+    await update.message.reply_text(help_text, parse_mode=ParseMode.HTML)
+
+async def handle_unsupported(update:Update, context:ContextTypes.DEFAULT_TYPE):
+    """
+    Handler para mensajes que no son texto.
+    Sin este handler, telegram no llama a ningun handler y el bot se queda en silencio,
+    lo que parece un error para el usuario.
+    """
+    await update.message.reply_text(
+        "Por ahora solo puedo entender mensajes de texto :)\n"
+        "Cuentame en palabras qué estás buscando"
+    )
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """

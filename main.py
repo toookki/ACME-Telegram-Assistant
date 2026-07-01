@@ -16,7 +16,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters
 
 from config.settings import TELEGRAM_TOKEN
 from modules.embeddings import load_embeddings
-from modules.handler import handle_start, handle_reset, handle_message
+from modules.handler import handle_start, handle_reset, handle_message, handle_help, handle_unsupported
 
 # Configurar logging para ver errores y eventos en consola
 logging.basicConfig(
@@ -44,9 +44,13 @@ def main():
     # Registrar handlers de comandos
     app.add_handler(CommandHandler("start", handle_start))
     app.add_handler(CommandHandler("reset", handle_reset))
+    app.add_handler(CommandHandler("help", handle_help))
 
     # Registrar handler de mensajes de texto (captura todo texto que no sea comando)
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+
+    # Registrar handler para mensajes no soportados (fotos, stickers, audio, etc.)
+    app.add_handler(MessageHandler(~filters.TEXT & ~filters.COMMAND, handle_unsupported))
 
     print("Bot corriendo. Presiona Ctrl+C para detener.")
     print("Bot disponible en Telegram como @acme_die_bot")

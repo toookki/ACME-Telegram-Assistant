@@ -1,7 +1,7 @@
 """
 modules/search.py
 =================
-Motor de búzzsqueda híbrida de productos.
+Motor de búsqueda híbrida de productos.
 
 Combina tres estrategias:
   1. Búsqueda semántica (embeddings + cosine similarity).
