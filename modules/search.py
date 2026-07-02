@@ -60,7 +60,6 @@ def _extract_filters(query: str) -> dict:
     for color in colores:
         if color in query_lower:
             filters["color"] = color
-            break
 
     # Tallas numéricas (ej: "talla 42", "número 42", "en 42")
     talla_match = re.search(r"talla\s*(\d+)|n[uú]mero\s*(\d+)|en\s+(\d{2})\b", query_lower)
@@ -84,7 +83,6 @@ def _extract_filters(query: str) -> dict:
     for marca in marcas:
         if marca in query_lower:
             filters["marca"] = marca
-            break
 
     return filters
 
@@ -240,4 +238,4 @@ def search_policies(query: str) -> Optional[str]:
             best_match = policy["contenido"]
 
     # Solo retornar si hay suficiente relevancia
-    return best_match if best_score > 0.15 else None
+    return best_match

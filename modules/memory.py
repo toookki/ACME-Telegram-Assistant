@@ -4,8 +4,6 @@ modules/memory.py
 Memoria conversacional por usuario.
 
 Almacena en un diccionario en RAM (se pierde al reiniciar el bot).
-Para persistencia entre reinicios, se podría migrar a SQLite o Redis,
-pero para el prototipo en RAM es suficiente.
 
 Por cada user_id guarda:
   - history: lista de mensajes recientes [{role, content}]
