@@ -3,7 +3,12 @@ modules/search.py
 =================
 Motor de búsqueda híbrida de productos y políticas.
 
-Usa un ranking híbrido: embeddings + keywords como base, reforzado con filtros, intención, precio y stock.
+Diseño:
+- Usa un ranking híbrido: embeddings + keywords como base, reforzado con filtros, intención, precio y stock.
+- Agrega normalización robusta para español y texto copiado desde PDF.
+- Agrega parser de intención: categoría, uso, marca, color, talla, precio.
+- Separa filtros duros de preferencias suaves.
+- Usa una taxonomía general del catálogo, no reglas por producto específico.
 """
 
 import json
