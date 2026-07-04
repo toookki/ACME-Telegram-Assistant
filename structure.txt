@@ -1,0 +1,21 @@
+ACME-Telegram-Assistant/
+│
+├── config/
+│   └── settings.py
+│
+├── data/
+│   ├── politicas.json
+│   └── productos.json
+│
+├── modules/
+│   ├── embeddings.py
+│   ├── handler.py
+│   ├── llm.py
+│   ├── memory.py
+│   ├── reference_resolver.py
+│   └── search.py
+│
+├── .env.example
+├── .gitignore
+├── main.py
+└── requirements.txt

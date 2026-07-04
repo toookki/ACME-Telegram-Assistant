@@ -1,29 +1,18 @@
 """
 modules/reference_resolver.py
-==============================
-Resuelve referencias a productos que YA se le mostraron al usuario
-("la segunda", "esa negra", "la más barata") sin volver a buscar en
-el catálogo completo.
+=============================
+Resuelve referencias directas a productos ya mostrados.
 
-Por qué existe este módulo
----------------------------
-Antes, cuando el usuario escribía "la segunda", el código no revisaba
-la posición 2 de lo que le acababa de mostrar. En vez de eso, mandaba
-el texto "la segunda" (pegado con los nombres de los productos
-anteriores) a search_products(), que vuelve a hacer una búsqueda
-semántica sobre TODO productos.json. El resultado era una lista nueva,
-sin relación real con lo que el usuario vio, y que además se
-renumeraba desde 1 otra vez. Por eso "la segunda" terminaba apuntando
-a cualquier cosa.
+No intenta resolver refinamientos nuevos como:
+- "¿Y tienes alguna Nike parecida?"
+- "¿Hay algo más barato aunque abrigue menos?"
 
-Este módulo se ejecuta ANTES de tocar el buscador: si detecta que el
-usuario está señalando algo por posición o por atributo, devuelve
-directamente ese producto (tomado de last_products, que sí es la
-lista real que se le mostró). Si no detecta ninguna referencia clara,
-devuelve None y el flujo normal de búsqueda sigue como antes.
+Esos casos deben volver al buscador usando el query_state anterior.
 """
 
 import re
+import unicodedata
+
 
 # Ordinales explícitos -> índice dentro de la lista mostrada (0 = primero).
 # Solo se incluyen formas ordinales ("segunda/segundo"), NO números
@@ -37,24 +26,65 @@ _ORDINAL_WORDS = {
     "cuarta": 3, "cuarto": 3,
     "quinta": 4, "quinto": 4,
     "sexta": 5, "sexto": 5,
-    "ultima": -1, "última": -1, "ultimo": -1, "último": -1,
+    "septima": 6, "septimo": 6,
+    "octava": 7, "octavo": 7,
+    "ultima": -1, "ultimo": -1,
 }
 
 # Solo dispara con "opción 2" / "producto 3", nunca con "el 42" o
 # "número 42" a secas, porque en tiendas de calzado "número" casi
 # siempre significa talla (ej: "uso el número 42"), no posición.
-_NUMBER_PATTERN = re.compile(r"\b(?:opci[oó]n|producto)\s*#?\s*(\d+)\b")
+_NUMBER_PATTERN = re.compile(
+    r"\b(?:opci[oó]n|producto)\s*#?\s*(\d+)\b"
+)
 
 _COLORES = [
     "negro", "blanco", "azul", "rojo", "gris", "verde",
-    "café", "cafe", "amarillo", "rosado", "naranja",
-    "morado", "transparente", "dorado",
+    "cafe", "amarillo", "rosado", "naranja", "morado",
+    "transparente", "dorado", "beige",
 ]
 
 
+def _normalize_text(text: str) -> str:
+    """
+    Normaliza un texto para facilitar comparaciones y búsquedas.
+
+    Convierte el texto a minúsculas, elimina tildes y caracteres
+    especiales, y reduce espacios consecutivos.
+
+    Args:
+        text: Texto que se desea normalizar.
+
+    Returns:
+        Texto normalizado.
+    """
+    text = str(text).lower()
+    text = text.replace("ı", "i").replace("´", "").replace("`", "")
+    text = unicodedata.normalize("NFD", text)
+    text = "".join(
+        ch for ch in text
+        if unicodedata.category(ch) != "Mn"
+    )
+    text = re.sub(r"\s+", " ", text)
+
+    return text.strip()
+
+
 def _extract_ordinal_index(text: str):
-    """Busca un ordinal explícito (palabra o 'opción/producto N') en el texto."""
-    text_l = text.lower()
+    """
+    Extrae el índice de una referencia ordinal explícita.
+
+    Reconoce palabras como "segunda" o "último", y expresiones
+    como "opción 2" o "producto 3".
+
+    Args:
+        text: Texto del usuario.
+
+    Returns:
+        Índice correspondiente dentro de la lista de productos,
+        o None si no se detecta una referencia ordinal.
+    """
+    text_l = _normalize_text(text)
 
     for word, idx in _ORDINAL_WORDS.items():
         if re.search(rf"\b{word}\b", text_l):
@@ -69,84 +99,264 @@ def _extract_ordinal_index(text: str):
 
 def _color_pattern(color: str) -> str:
     """
-    Genera un patrón que reconoce ambos géneros ("negro"/"negra",
-    "dorado"/"dorada"), ya que en la lista de colores de cada
-    producto siempre se guarda la forma masculina, pero el usuario
-    puede escribir "esa negra" en femenino.
+    Genera un patrón regex para reconocer variantes de género y número.
+
+    Permite detectar expresiones como "negro", "negra", "negros"
+    o "negras", aunque los colores de los productos se almacenen
+    normalmente en forma masculina.
+
+    Args:
+        color: Nombre del color base.
+
+    Returns:
+        Patrón regex asociado al color.
     """
+    color = _normalize_text(color)
+
+    if color == "cafe":
+        return r"\bcaf(e|es)\b"
+
     if color.endswith("o"):
         return rf"\b{color[:-1]}[oa]s?\b"
+
     return rf"\b{color}s?\b"
 
 
-def _extract_simple_filters(text: str) -> dict:
+def _extract_color(text: str):
     """
-    Extracción mínima de atributos, usada SOLO para filtrar entre los
-    productos que ya están en last_products (no para buscar en el
-    catálogo completo).
+    Extrae un color reconocido desde el texto del usuario.
+
+    Args:
+        text: Texto del usuario.
+
+    Returns:
+        Nombre normalizado del color detectado,
+        o None si no se encuentra ninguno.
     """
-    text_l = text.lower()
-    filters = {}
+    text_l = _normalize_text(text)
 
     for color in _COLORES:
         if re.search(_color_pattern(color), text_l):
-            filters["color"] = "cafe" if color == "café" else color
-            break
+            return color
 
-    if re.search(r"m[aá]s barat|m[aá]s econ[oó]mic|menor precio", text_l):
-        filters["orden_precio"] = "asc"
-    elif re.search(r"m[aá]s car|premium", text_l):
-        filters["orden_precio"] = "desc"
+    return None
 
-    return filters
+
+def _extract_size(text: str):
+    """
+    Extrae una talla explícita desde el texto del usuario.
+
+    Reconoce expresiones como "talla 42", "número 42",
+    "talla M" o "en 42".
+
+    Args:
+        text: Texto del usuario.
+
+    Returns:
+        Talla detectada como int si es numérica, como str si es
+        alfabética, o None si no se detecta ninguna.
+    """
+    text_l = _normalize_text(text)
+
+    match = re.search(
+        r"talla\s*([a-z]{1,3}|\d{1,2})|"
+        r"numero\s*([a-z]{1,3}|\d{1,2})|"
+        r"en\s+(\d{2})\b",
+        text_l,
+    )
+
+    if not match:
+        return None
+
+    raw = next(g for g in match.groups() if g)
+    raw = raw.upper()
+
+    return int(raw) if raw.isdigit() else raw
+
+
+def _is_refinement_query(text: str) -> bool:
+    """
+    Determina si el texto corresponde a un refinamiento de búsqueda.
+
+    Detecta expresiones que solicitan nuevos productos similares
+    o alternativas, por lo que la consulta debe volver al buscador
+    en lugar de resolverse como una referencia directa.
+
+    Args:
+        text: Texto del usuario.
+
+    Returns:
+        True si se detecta un refinamiento de búsqueda;
+        False en caso contrario.
+    """
+    t = _normalize_text(text)
+
+    patterns = [
+        r"\bparecid\w*\b",
+        r"\bsimilar\w*\b",
+        r"\botra opcion\b",
+        r"\botras opciones\b",
+        r"\balguna?\b",
+        r"\by tienes\b",
+        r"\btienes alguna\b",
+        r"\bque abrigue menos\b",
+        r"\babrigue menos\b",
+        r"\bmenos abrigad\w*\b",
+        r"\baunque abrig\w* menos\b",
+    ]
+
+    return any(re.search(pattern, t) for pattern in patterns)
+
+
+def _is_attribute_question(text: str) -> bool:
+    """
+    Determina si el usuario pregunta por atributos de un producto.
+
+    Detecta consultas relacionadas con talla, color u otras
+    expresiones que contienen esos atributos.
+
+    Args:
+        text: Texto del usuario.
+
+    Returns:
+        True si se detecta una pregunta por atributos;
+        False en caso contrario.
+    """
+    t = _normalize_text(text)
+
+    return bool(
+        re.search(r"\btiene\b.*\btalla\b", t)
+        or re.search(
+            r"\besta\b.*\b("
+            r"color|negro|blanco|azul|rojo|gris|verde|beige|cafe"
+            r")\b",
+            t,
+        )
+        or re.search(r"\bhay\b.*\b(en|color|talla)\b", t)
+        or _extract_color(t)
+        or _extract_size(t)
+    )
+
+
+def _product_has_color(product: dict, color: str) -> bool:
+    """
+    Verifica si un producto está disponible en un color determinado.
+
+    Args:
+        product: Diccionario con la información del producto.
+        color: Color normalizado que se desea comprobar.
+
+    Returns:
+        True si el producto incluye el color;
+        False en caso contrario.
+    """
+    colores = [
+        _normalize_text(c)
+        for c in product.get("colores", [])
+    ]
+
+    return color in colores
+
+
+def _product_has_size(product: dict, size) -> bool:
+    """
+    Verifica si un producto está disponible en una talla determinada.
+
+    Compara primero los valores originales y luego sus versiones
+    normalizadas para admitir representaciones equivalentes.
+
+    Args:
+        product: Diccionario con la información del producto.
+        size: Talla que se desea comprobar.
+
+    Returns:
+        True si el producto incluye la talla;
+        False en caso contrario.
+    """
+    tallas = product.get("tallas", [])
+
+    if size in tallas:
+        return True
+
+    size_norm = _normalize_text(str(size))
+    tallas_norm = [
+        _normalize_text(str(t))
+        for t in tallas
+    ]
+
+    return size_norm in tallas_norm
 
 
 def resolve_reference(user_text: str, last_products: list):
     """
-    Intenta averiguar a cuál de los productos en `last_products` se
-    refiere el usuario.
+    Intenta resolver una referencia a productos mostrados previamente.
+
+    Puede identificar referencias por posición, precio, color, talla
+    o atributos de un único producto mostrado. Las consultas que
+    representan refinamientos nuevos se dejan sin resolver para que
+    vuelvan al buscador.
 
     Args:
-        user_text: mensaje del usuario, tal cual (sin modificar).
-        last_products: lista de productos mostrados en el turno anterior.
+        user_text: Mensaje del usuario tal como fue recibido.
+        last_products: Lista de productos mostrados previamente.
 
     Returns:
-        list[dict] con el/los producto(s) referenciado(s), o None si no
-        se detectó ninguna referencia clara (en ese caso el llamador
-        debe hacer una búsqueda normal en el catálogo).
+        Lista con el producto o los productos referenciados;
+        lista vacía si la referencia ordinal está fuera de rango;
+        o None si no se detecta una referencia clara.
     """
     if not last_products:
         return None
 
-    # 1. Referencia por posición: "la segunda", "el primero", "opción 3"
+    if _is_refinement_query(user_text):
+        return None
+
     idx = _extract_ordinal_index(user_text)
     if idx is not None:
         try:
             return [last_products[idx]]
         except IndexError:
-            # El usuario pidió una posición que no existe
-            # (ej. "la quinta" habiendo solo 3 productos).
-            return None
+            return []
 
-    # 2. Referencia por atributo: "esa negra", "la más barata"
-    filters = _extract_simple_filters(user_text)
-    if filters:
-        candidates = last_products
+    if len(last_products) == 1 and _is_attribute_question(user_text):
+        return [last_products[0]]
 
-        if "color" in filters:
-            candidates = [
-                p for p in candidates
-                if filters["color"] in [c.lower() for c in p.get("colores", [])]
-            ]
+    t = _normalize_text(user_text)
 
-        if "orden_precio" in filters and candidates:
-            candidates = sorted(
-                candidates,
+    if re.search(r"\b(mas barat\w*|mas economic\w*|menor precio)\b", t):
+        return [
+            min(
+                last_products,
                 key=lambda p: p.get("precio", 0),
-                reverse=(filters["orden_precio"] == "desc"),
             )
-            candidates = candidates[:1]
+        ]
 
-        return candidates or None
+    if re.search(r"\b(mas car\w*|premium|gama alta)\b", t):
+        return [
+            max(
+                last_products,
+                key=lambda p: p.get("precio", 0),
+            )
+        ]
+
+    color = _extract_color(user_text)
+    size = _extract_size(user_text)
+
+    candidates = last_products
+
+    if color:
+        candidates = [
+            p for p in candidates
+            if _product_has_color(p, color)
+        ]
+
+    if size is not None:
+        candidates = [
+            p for p in candidates
+            if _product_has_size(p, size)
+        ]
+
+    if color or size is not None:
+        return candidates
 
     return None
